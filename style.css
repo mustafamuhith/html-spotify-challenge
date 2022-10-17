@@ -16,6 +16,8 @@ body {
 
     display: grid;
     grid-template-columns: 0.2fr 1fr;
+
+    position: relative;
 }
 
 /* LEFT PANEL */
@@ -32,6 +34,27 @@ header {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+}
+
+.upgrade-button {
+    color: white;
+
+    position: absolute;
+    top: 25%;
+    left: 85%;
+
+    border: 1px white solid;
+    border-radius: 20px;
+
+    width: 250px;
+    height: 45px;
+
+    text-align: center;
+    padding-top: 12px;
+
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 h1 {
@@ -57,7 +80,6 @@ h1 {
 
     padding-top: 100px;
 
-    margin-left: 15px;
 }
 
 .icon-column {
@@ -69,6 +91,7 @@ height: 100px;
 
 list-style-type: none;
 
+margin-top: 15px;
 }
 
 .gap {
@@ -86,6 +109,7 @@ list-style-type: none;
  font-size: 1.8rem;
 
  height: 100px;
+
 }
 
 .gap-home {
@@ -95,10 +119,15 @@ list-style-type: none;
     color: white;
 }
 
+
 .gap2-home {
 color: white;
 
 padding-bottom: 10px;
+}
+
+.gap2-home:hover {
+    border-left: green 3px solid;
 }
 
 .add-icon {
@@ -138,13 +167,51 @@ margin-bottom: 20px;
 }
 
 .panel-bottom {
-    border: 1px red solid;
 
-    margin-top: 480px;
+    margin-top: 450px;
+
+    list-style-type: none;
+
 }
 
+.download {
+    font-size: 0.8rem;
+
+    margin-left: 10px;
+
+    position: absolute;
+    top: 14%;
+    left: 15%;
+}
+
+.download-box {
+    border-bottom: #5C5E63 1px solid;
+
+    width: 200px;
+
+    padding-bottom: 10px;
+
+    position: relative;
+}
+
+.john-box {
+    margin-top: 10px;
+    
+    padding-top: 5px;
+}
+
+.john {
+    color: white;
+
+    font-size: 1rem;
+
+    margin-left: 5px;
+}
 
 /* END OF LEFT PANEL */
+
+
+
 
 
 /* MAIN PANEL */
@@ -154,8 +221,6 @@ h2 {
     padding-bottom: 15px;
 
     font-size: 2rem;
-
-    
 }
 
 h3 {
@@ -165,20 +230,29 @@ h3 {
 
     margin-left: 15px;
     padding-bottom: 30px;
-
 }
+
 .menu-list {
-color: #5C5E63;
-text-transform: uppercase;
+    color: #5C5E63;
+    text-transform: uppercase;
 
-font-size: 0.8rem;
-font-weight: bolder;
+    font-size: 0.8rem;
+    font-weight: bolder;
 
-list-style-type: none;
+    list-style-type: none;
 
-display: flex;
-gap: 10px;
-justify-content:  center;
+    display: flex;
+    gap: 10px;
+    justify-content:  center;
+
+    position: relative;
+    position: absolute;
+    top: 11.5%;
+    left: 55%;
+}
+
+.ml-hover:hover {
+    border-bottom: 3px solid green;
 }
 
 .main-panel {
@@ -187,16 +261,12 @@ justify-content:  center;
 
     margin-top: 100px;
 
-    width: 100vw;
+    width: 100vw  
 }
 
 .main-columns {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-
-}
-
-.container {
 }
 
 .box-class {
@@ -215,7 +285,10 @@ justify-content:  center;
     object-fit: cover;
     height: 100%;
     width: 100%;
+}
 
+.thumbnail:hover {
+ background-image: url(/i);
 }
 
 .thumb-title, .thumb-description {
@@ -289,7 +362,6 @@ footer {
     font-weight: bold;
 
     padding-left: 15px;
-
 }
 
 .playing-title {
@@ -323,8 +395,6 @@ footer {
     justify-items: center;
     margin-top: 15px;
     padding: 10px;
-
-    
 
     color: white;
 
